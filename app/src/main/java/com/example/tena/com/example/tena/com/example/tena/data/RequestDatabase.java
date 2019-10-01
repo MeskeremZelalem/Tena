@@ -1,0 +1,10 @@
+package com.example.tena.com.example.tena.com.example.tena.data;
+
+import androidx.room.Database;
+import androidx.room.RoomDatabase;
+
+@Database(entities = {Request.class},version = 1,exportSchema = false)
+public abstract class RequestDatabase extends RoomDatabase {
+
+    public abstract RequestDao daoRequest();
+}

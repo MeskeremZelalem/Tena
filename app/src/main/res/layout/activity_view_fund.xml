@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".com.example.tena.activity.ViewFundActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/light">
+
+
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fund Requests"
+        android:textSize="22sp"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/gradient"
+        />
+
+
+
+<LinearLayout
+android:layout_height="wrap_content"
+android:layout_width="match_parent"
+
+    >
+    <ImageView
+        android:layout_marginLeft="15dp"
+        android:layout_height="match_parent"
+        android:layout_width="22dp"
+        app:srcCompat="@drawable/ic_menu_black_24dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="30dp"
+        android:hint="Search"
+        android:background="@drawable/search_bar"
+        android:clickable="true"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="62dp" />
+</LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:id="@+id/recycler"/>
+</LinearLayout>
